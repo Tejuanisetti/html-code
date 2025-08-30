@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Table Example</title>
+</head>
+<body>
+    <h2>Example of HTML Table with border, rowspan, and colspan</h2>
+
+    <table border="2" cellpadding="10" cellspacing="0">
+        <!-- Table Header Row -->
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th colspan="2">Marks</th> <!-- colspan merges two columns -->
+        </tr>
+
+        <!-- First Data Row -->
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Math: 90</td>
+            <td>Science: 85</td>
+        </tr>
+
+        <!-- Second Data Row with rowspan -->
+        <tr>
+            <td>2</td>
+            <td rowspan="2">Jane Smith</td> <!-- rowspan merges two rows -->
+            <td>Math: 88</td>
+            <td>Science: 92</td>
+        </tr>
+
+        <!-- Third Data Row continues rowspan -->
+        <tr>
+            <td>3</td>
+            <td>Math: 75</td>
+            <td>Science: 80</td>
+        </tr>
+    </table>
+
+    <p><strong>Explanation:</strong></p>
+    <ul>
+        <li><code>&lt;table border="2"&gt;</code>: Creates a table with border thickness 2.</li>
+        <li><code>&lt;tr&gt;</code>: Defines a table row.</li>
+        <li><code>&lt;th&gt;</code>: Defines a table header cell (bold and centered).</li>
+        <li><code>&lt;td&gt;</code>: Defines a table data cell.</li>
+        <li><code>colspan="2"</code>: Merges two columns into one cell.</li>
+        <li><code>rowspan="2"</code>: Merges two rows into one cell vertically.</li>
+    </ul>
+</body>
+</html>
