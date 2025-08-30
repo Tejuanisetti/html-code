@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thumbnail Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .gallery a img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+    .gallery a img:hover {
+      border-color: #007BFF;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Gallery with Thumbnails</h1>
+  <div class="gallery">
+   <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" target="_blank">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80" alt="Image 1" />
+</a>
+<a href="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" target="_blank">
+  <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=100&q=80" alt="Image 2" />
+</a>
+<a href="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?auto=format&fit=crop&w=800&q=80" target="_blank">
+  <img src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?auto=format&fit=crop&w=100&q=80" alt="Image 3" />
+</a>
+<a href="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" target="_blank">
+  <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=100&q=80" alt="Image 4" />
+</a>
+  </div>
+</body>
+</html>
