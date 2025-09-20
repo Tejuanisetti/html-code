@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 Semantic Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    header, footer, nav {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+    main {
+      padding: 1em;
+      display: flex;
+      gap: 1em;
+    }
+    article {
+      background-color: #f4f4f4;
+      padding: 1em;
+      flex: 3;
+    }
+    aside {
+      background-color: #ddd;
+      padding: 1em;
+      flex: 1;
+    }
+    section {
+      margin-bottom: 1em;
+    }
+    figure {
+      margin: 0;
+      padding: 0.5em 0;
+      text-align: center;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Website Header</h1>
+  <p>Welcome to my website <span class="highlight">using semantic tags</span>!</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Blog</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <article>
+    <section>
+      <h2>Article Title</h2>
+      <p>This is the main content of the article. It explains interesting topics.</p>
+      <figure>
+        <img src=https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80 />
+        <figcaption>Fig 1: Example of a placeholder image</figcaption>
+      </figure>
+      <p>More content inside the article. <span class="highlight">Important note!</span></p>
+    </section>
+  </article>
+
+  <aside>
+    <h3>Related Links</h3>
+    <ul>
+      <li><a href=https://www.teachthought.com/education/education-needs-more-than-reform/Additional >Additional Info</a></a></li>
+      <li><a href="https://www.khanacademy.org/" >External resources</a></li>
+      <li><a href="https://www.commonsense.org/education/">Popular posts</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Website. All rights reserved.</p>
+  <div>Contact: <span>info@example.com</span></div>
+</footer>
